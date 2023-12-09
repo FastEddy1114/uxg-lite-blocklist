@@ -6,13 +6,13 @@ correctly.
 
 1. Setup a firewall IPv4 group called "FireHOL" with one place holder IPv4 address or subnet such as "192.168.0.0/16" as this address will always be in the list anyway as it is a bogon.  The name is important because it's used by the script.
 1. Setup firewall Internet In, Internet Local, and Internet Out rules to drop traffic from/to this group.
-1. Install the script into /persistent/system on the UXG-Lite.  Please check the files before running.
+1. Download the blocklist.sh file to your PC and use a tool like FileZilla to upload the file to your UXG-Lite. Upload it to /persistent/system on the UXG-Lite.  Please check the files before running.
+1. SSH into your UXG-Lite and make the script executable.
    
    ```
-   curl -o /persistent/system/blocklist.sh https://raw.githubusercontent.com/FastEddy1114/uxg-lite-blocklist/main/blocklist.sh
    chmod +x /persistent/system/blocklist.sh
    ```
-1. SSH into UXG-Lite to create crontab file so the script runs on reboot in addition to scheduled interval
+1. SSH into UXG-Lite to create a crontab file so the script runs on reboot in addition to a scheduled interval
 
    ```
    crontab -e
