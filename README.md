@@ -23,7 +23,7 @@ correctly.
    @reboot /persistent/system/blocklist.sh
    @daily /persistent/system/blocklist.sh
    ```
-   :wq - to quite and write the crontab file
+   :wq - to quit and write the crontab file
    crontab: installing new crontab - should be displayed after writing and quiting the editor
    
 1. Reboot UXG-Lite to force immediate script execution or SSH into UXG-Lite and run below command to force immediate script execution
