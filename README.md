@@ -9,7 +9,7 @@ correctly.
 1. Install the script into /persistent/system on the UXG-Lite.  Please check the files before running.
    
    ```
-   curl -o /persistent/system/blocklist.sh https://raw.githubusercontent.com/FastEddy1114/uxg-lite-blocklist/master/blocklist.sh
+   curl -o /persistent/system/blocklist.sh https://raw.githubusercontent.com/FastEddy1114/uxg-lite-blocklist/main/blocklist.sh
    chmod +x /persistent/system/blocklist.sh
    ```
 1. SSH into UXG-Lite to create crontab file so the script runs on reboot in addition to scheduled interval
