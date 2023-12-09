@@ -17,7 +17,7 @@ correctly.
    ```
    crontab -e
    ```
-   a - to enter Insert mode
+   a - to enter Insert mode,
    enter these two lines below after the last line in the file
    ```
    @reboot /persistent/system/blocklist.sh
