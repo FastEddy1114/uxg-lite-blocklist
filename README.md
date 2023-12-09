@@ -34,3 +34,4 @@ correctly.
 
 You can use a tool like FileZilla FTP client to SFTP to your UXG-Lite and browse the file system.  After the script executes you should be able to see the backup file and the log of the script execution in the /persistent/system directory.
 You can also see the logging of the blocked addresses within the conrtoller in the System Log > Triggers area.
+Example screenshots showing the configuration areas in the controller, system logs to show the blocklist script is working, crontab file example, and FileZilla client showing the script log location are also included.
