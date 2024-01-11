@@ -17,13 +17,13 @@ correctly.
    ```
    crontab -e
    ```
-   Press ```a``` - to enter Insert mode,
+   Press ```a``` on your keyboard to enter Insert mode,
    enter these two lines below after the last line in the file
    ```
    @reboot /persistent/system/blocklist.sh
    @daily /persistent/system/blocklist.sh
    ```
-   Press ESC on your keyboard, then enter ```:wq``` - to quit and write the crontab file,
+   Press ESC on your keyboard, then enter ```:wq``` to quit and write the crontab file,
    crontab: installing new crontab - should be displayed after writing and quiting the editor
    
 1. Reboot UXG-Lite to force immediate script execution or SSH into UXG-Lite and run below command to force immediate script execution
