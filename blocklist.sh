@@ -70,6 +70,7 @@ process_blocklist () {
 	fi
 
 	# Write blocklist contents to the log file
+ 	echo "Sorting list and saving contents to log file"
 	{
 	echo "Blocklist contents"
 	/usr/sbin/ipset list -s "$real_list"
