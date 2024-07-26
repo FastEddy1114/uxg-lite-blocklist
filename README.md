@@ -12,10 +12,10 @@ correctly.
    ```
    chmod +x /persistent/system/blocklist.sh
    ```
-1. SSH into UXG-Lite to create a crontab file so the script runs on reboot in addition to a scheduled interval
+1. SSH into UXG-Lite to edit the default crontab file so the script runs on reboot in addition to a scheduled interval
 
    ```
-   crontab -e
+   vi /etc/crontab
    ```
    Press ```a``` on your keyboard to enter Insert mode,
    enter these two lines below after the last line in the file
@@ -34,6 +34,5 @@ correctly.
 
 You can use a tool like FileZilla FTP client to SFTP to your UXG-Lite and browse the file system.  After the script executes you should be able to see the backup file and the log of the script execution in the /persistent/system directory.
 You can also see the logging of the blocked addresses within the controller in the System Log > Triggers area.
+This configuration will make the script persistent across reboots and firmware upgrades.
 Example screenshots showing the configuration areas in the controller, system logs to show the blocklist script is working, crontab file example, and FileZilla client showing the script log location are also included.
-
-NOTE: A firmware update to the UXG-Lite will remove the root user crontab file so it will need to be recreated after a firmware update to get the script running again.  I have not found a way yet to make the crontab file persistent across firmware upgrades.
