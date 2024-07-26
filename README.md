@@ -23,8 +23,9 @@ correctly.
    @reboot /persistent/system/blocklist.sh
    @daily /persistent/system/blocklist.sh
    ```
-   Press ESC on your keyboard, then enter ```:wq``` to quit and write the crontab file,
-   crontab: installing new crontab - should be displayed after writing and quiting the editor
+   Press ESC on your keyboard, then enter ```:wq``` to quit and write the crontab file.
+
+1. Then enter ```service cron reload``` and you should then see ```Reloading configuration files for periodic command scheduler: cron.```
    
 1. Reboot UXG-Lite to force immediate script execution or SSH into UXG-Lite and run below command to force immediate script execution
 
