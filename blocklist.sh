@@ -38,7 +38,7 @@ process_blocklist () {
 	/usr/sbin/ipset create $ipset_list hash:net
 
 	# loop through firehol block lists and parse them for CIDR entries
-	for url in https://iplists.firehol.org/files/firehol_level1.netset https://iplists.firehol.org/files/firehol_level2.netset https://iplists.firehol.org/files/iblocklist_onion_router.netset https://iplists.firehol.org/files/ciarmy.ipset
+	for url in https://iplists.firehol.org/files/firehol_level1.netset https://iplists.firehol.org/files/firehol_level2.netset https://iplists.firehol.org/files/iblocklist_onion_router.netset https://iplists.firehol.org/files/ciarmy.ipset https://iplists.firehol.org/files/iblocklist_ciarmy_malicious.netset
 	do
 		echo "Fetching and processing $url"
 		{
@@ -70,7 +70,7 @@ process_blocklist () {
 	fi
 
 	# Write blocklist contents to the log file
- 	echo "Sorting list and saving contents to log file"
+	echo "Sorting list and saving contents to log file"
 	{
 	echo "Blocklist contents"
 	/usr/sbin/ipset list -s "$real_list"
